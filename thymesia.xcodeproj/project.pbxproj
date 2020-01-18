@@ -7,71 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1910B1902364227300EC7AD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1910B18F2364227300EC7AD4 /* AppDelegate.swift */; };
-		1910B1922364227300EC7AD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1910B1912364227300EC7AD4 /* SceneDelegate.swift */; };
-		1910B1942364227300EC7AD4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1910B1932364227300EC7AD4 /* ContentView.swift */; };
-		1910B1962364227500EC7AD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1910B1952364227500EC7AD4 /* Assets.xcassets */; };
-		1910B1992364227500EC7AD4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1910B1982364227500EC7AD4 /* Preview Assets.xcassets */; };
-		1910B19C2364227500EC7AD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1910B19A2364227500EC7AD4 /* LaunchScreen.storyboard */; };
-		1910B1A72364227500EC7AD4 /* thymesiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1910B1A62364227500EC7AD4 /* thymesiaTests.swift */; };
-		1910B1B22364227500EC7AD4 /* thymesiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1910B1B12364227500EC7AD4 /* thymesiaUITests.swift */; };
-		194F7FD12365C21600FE2226 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F7FD02365C21600FE2226 /* Key.swift */; };
-		993FF3B523658ECA005E48D3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993FF3B423658ECA005E48D3 /* Model.swift */; };
+		198E8AF823BDE3CB00B7E085 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E8AF723BDE3CB00B7E085 /* AppDelegate.swift */; };
+		198E8AFA23BDE3CB00B7E085 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E8AF923BDE3CB00B7E085 /* SceneDelegate.swift */; };
+		198E8AFC23BDE3CB00B7E085 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E8AFB23BDE3CB00B7E085 /* ContentView.swift */; };
+		198E8AFE23BDE3CB00B7E085 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198E8AFD23BDE3CB00B7E085 /* Assets.xcassets */; };
+		198E8B0123BDE3CB00B7E085 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198E8B0023BDE3CB00B7E085 /* Preview Assets.xcassets */; };
+		198E8B0423BDE3CB00B7E085 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198E8B0223BDE3CB00B7E085 /* LaunchScreen.storyboard */; };
+		198E8B0F23BDE3CC00B7E085 /* ThymesiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E8B0E23BDE3CC00B7E085 /* ThymesiaTests.swift */; };
+		198E8B1A23BDE3CC00B7E085 /* ThymesiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E8B1923BDE3CC00B7E085 /* ThymesiaUITests.swift */; };
+		198E8B2823BDE64B00B7E085 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E8B2723BDE64B00B7E085 /* PageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1910B1A32364227500EC7AD4 /* PBXContainerItemProxy */ = {
+		198E8B0B23BDE3CC00B7E085 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1910B1842364227300EC7AD4 /* Project object */;
+			containerPortal = 198E8AEC23BDE3CB00B7E085 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1910B18B2364227300EC7AD4;
-			remoteInfo = thymesia;
+			remoteGlobalIDString = 198E8AF323BDE3CB00B7E085;
+			remoteInfo = Thymesia;
 		};
-		1910B1AE2364227500EC7AD4 /* PBXContainerItemProxy */ = {
+		198E8B1623BDE3CC00B7E085 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1910B1842364227300EC7AD4 /* Project object */;
+			containerPortal = 198E8AEC23BDE3CB00B7E085 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1910B18B2364227300EC7AD4;
-			remoteInfo = thymesia;
+			remoteGlobalIDString = 198E8AF323BDE3CB00B7E085;
+			remoteInfo = Thymesia;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1910B18C2364227300EC7AD4 /* thymesia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thymesia.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1910B18F2364227300EC7AD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1910B1912364227300EC7AD4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1910B1932364227300EC7AD4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		1910B1952364227500EC7AD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1910B1982364227500EC7AD4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1910B19B2364227500EC7AD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1910B19D2364227500EC7AD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1910B1A22364227500EC7AD4 /* thymesiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thymesiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1910B1A62364227500EC7AD4 /* thymesiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thymesiaTests.swift; sourceTree = "<group>"; };
-		1910B1A82364227500EC7AD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1910B1AD2364227500EC7AD4 /* thymesiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thymesiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1910B1B12364227500EC7AD4 /* thymesiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thymesiaUITests.swift; sourceTree = "<group>"; };
-		1910B1B32364227500EC7AD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		194F7FD02365C21600FE2226 /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
-		19D6CCEC2364573C00E2C421 /* thymesia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = thymesia.entitlements; sourceTree = "<group>"; };
-		993FF3B423658ECA005E48D3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		198E8AF423BDE3CB00B7E085 /* Thymesia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thymesia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		198E8AF723BDE3CB00B7E085 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		198E8AF923BDE3CB00B7E085 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		198E8AFB23BDE3CB00B7E085 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		198E8AFD23BDE3CB00B7E085 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		198E8B0023BDE3CB00B7E085 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		198E8B0323BDE3CB00B7E085 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		198E8B0523BDE3CB00B7E085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		198E8B0A23BDE3CC00B7E085 /* ThymesiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThymesiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		198E8B0E23BDE3CC00B7E085 /* ThymesiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThymesiaTests.swift; sourceTree = "<group>"; };
+		198E8B1023BDE3CC00B7E085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		198E8B1523BDE3CC00B7E085 /* ThymesiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThymesiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		198E8B1923BDE3CC00B7E085 /* ThymesiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThymesiaUITests.swift; sourceTree = "<group>"; };
+		198E8B1B23BDE3CC00B7E085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		198E8B2723BDE64B00B7E085 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1910B1892364227300EC7AD4 /* Frameworks */ = {
+		198E8AF123BDE3CB00B7E085 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1910B19F2364227500EC7AD4 /* Frameworks */ = {
+		198E8B0723BDE3CC00B7E085 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1910B1AA2364227500EC7AD4 /* Frameworks */ = {
+		198E8B1223BDE3CC00B7E085 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -81,149 +78,147 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1910B1832364227300EC7AD4 = {
+		198E8AEB23BDE3CB00B7E085 = {
 			isa = PBXGroup;
 			children = (
-				1910B18E2364227300EC7AD4 /* thymesia */,
-				1910B1A52364227500EC7AD4 /* thymesiaTests */,
-				1910B1B02364227500EC7AD4 /* thymesiaUITests */,
-				1910B18D2364227300EC7AD4 /* Products */,
+				198E8AF623BDE3CB00B7E085 /* Thymesia */,
+				198E8B0D23BDE3CC00B7E085 /* ThymesiaTests */,
+				198E8B1823BDE3CC00B7E085 /* ThymesiaUITests */,
+				198E8AF523BDE3CB00B7E085 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1910B18D2364227300EC7AD4 /* Products */ = {
+		198E8AF523BDE3CB00B7E085 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1910B18C2364227300EC7AD4 /* thymesia.app */,
-				1910B1A22364227500EC7AD4 /* thymesiaTests.xctest */,
-				1910B1AD2364227500EC7AD4 /* thymesiaUITests.xctest */,
+				198E8AF423BDE3CB00B7E085 /* Thymesia.app */,
+				198E8B0A23BDE3CC00B7E085 /* ThymesiaTests.xctest */,
+				198E8B1523BDE3CC00B7E085 /* ThymesiaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1910B18E2364227300EC7AD4 /* thymesia */ = {
+		198E8AF623BDE3CB00B7E085 /* Thymesia */ = {
 			isa = PBXGroup;
 			children = (
-				1910B18F2364227300EC7AD4 /* AppDelegate.swift */,
-				1910B1912364227300EC7AD4 /* SceneDelegate.swift */,
-				1910B1932364227300EC7AD4 /* ContentView.swift */,
-				993FF3B423658ECA005E48D3 /* Model.swift */,
-				1910B1952364227500EC7AD4 /* Assets.xcassets */,
-				1910B19A2364227500EC7AD4 /* LaunchScreen.storyboard */,
-				1910B19D2364227500EC7AD4 /* Info.plist */,
-				1910B1972364227500EC7AD4 /* Preview Content */,
-				19D6CCEC2364573C00E2C421 /* thymesia.entitlements */,
-				194F7FD02365C21600FE2226 /* Key.swift */,
+				198E8AF723BDE3CB00B7E085 /* AppDelegate.swift */,
+				198E8AF923BDE3CB00B7E085 /* SceneDelegate.swift */,
+				198E8AFB23BDE3CB00B7E085 /* ContentView.swift */,
+				198E8AFD23BDE3CB00B7E085 /* Assets.xcassets */,
+				198E8B0223BDE3CB00B7E085 /* LaunchScreen.storyboard */,
+				198E8B0523BDE3CB00B7E085 /* Info.plist */,
+				198E8AFF23BDE3CB00B7E085 /* Preview Content */,
+				198E8B2723BDE64B00B7E085 /* PageView.swift */,
 			);
-			path = thymesia;
+			path = Thymesia;
 			sourceTree = "<group>";
 		};
-		1910B1972364227500EC7AD4 /* Preview Content */ = {
+		198E8AFF23BDE3CB00B7E085 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				1910B1982364227500EC7AD4 /* Preview Assets.xcassets */,
+				198E8B0023BDE3CB00B7E085 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		1910B1A52364227500EC7AD4 /* thymesiaTests */ = {
+		198E8B0D23BDE3CC00B7E085 /* ThymesiaTests */ = {
 			isa = PBXGroup;
 			children = (
-				1910B1A62364227500EC7AD4 /* thymesiaTests.swift */,
-				1910B1A82364227500EC7AD4 /* Info.plist */,
+				198E8B0E23BDE3CC00B7E085 /* ThymesiaTests.swift */,
+				198E8B1023BDE3CC00B7E085 /* Info.plist */,
 			);
-			path = thymesiaTests;
+			path = ThymesiaTests;
 			sourceTree = "<group>";
 		};
-		1910B1B02364227500EC7AD4 /* thymesiaUITests */ = {
+		198E8B1823BDE3CC00B7E085 /* ThymesiaUITests */ = {
 			isa = PBXGroup;
 			children = (
-				1910B1B12364227500EC7AD4 /* thymesiaUITests.swift */,
-				1910B1B32364227500EC7AD4 /* Info.plist */,
+				198E8B1923BDE3CC00B7E085 /* ThymesiaUITests.swift */,
+				198E8B1B23BDE3CC00B7E085 /* Info.plist */,
 			);
-			path = thymesiaUITests;
+			path = ThymesiaUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1910B18B2364227300EC7AD4 /* thymesia */ = {
+		198E8AF323BDE3CB00B7E085 /* Thymesia */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1910B1B62364227500EC7AD4 /* Build configuration list for PBXNativeTarget "thymesia" */;
+			buildConfigurationList = 198E8B1E23BDE3CC00B7E085 /* Build configuration list for PBXNativeTarget "Thymesia" */;
 			buildPhases = (
-				1910B1882364227300EC7AD4 /* Sources */,
-				1910B1892364227300EC7AD4 /* Frameworks */,
-				1910B18A2364227300EC7AD4 /* Resources */,
+				198E8AF023BDE3CB00B7E085 /* Sources */,
+				198E8AF123BDE3CB00B7E085 /* Frameworks */,
+				198E8AF223BDE3CB00B7E085 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = thymesia;
-			productName = thymesia;
-			productReference = 1910B18C2364227300EC7AD4 /* thymesia.app */;
+			name = Thymesia;
+			productName = Thymesia;
+			productReference = 198E8AF423BDE3CB00B7E085 /* Thymesia.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1910B1A12364227500EC7AD4 /* thymesiaTests */ = {
+		198E8B0923BDE3CC00B7E085 /* ThymesiaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1910B1B92364227500EC7AD4 /* Build configuration list for PBXNativeTarget "thymesiaTests" */;
+			buildConfigurationList = 198E8B2123BDE3CC00B7E085 /* Build configuration list for PBXNativeTarget "ThymesiaTests" */;
 			buildPhases = (
-				1910B19E2364227500EC7AD4 /* Sources */,
-				1910B19F2364227500EC7AD4 /* Frameworks */,
-				1910B1A02364227500EC7AD4 /* Resources */,
+				198E8B0623BDE3CC00B7E085 /* Sources */,
+				198E8B0723BDE3CC00B7E085 /* Frameworks */,
+				198E8B0823BDE3CC00B7E085 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1910B1A42364227500EC7AD4 /* PBXTargetDependency */,
+				198E8B0C23BDE3CC00B7E085 /* PBXTargetDependency */,
 			);
-			name = thymesiaTests;
-			productName = thymesiaTests;
-			productReference = 1910B1A22364227500EC7AD4 /* thymesiaTests.xctest */;
+			name = ThymesiaTests;
+			productName = ThymesiaTests;
+			productReference = 198E8B0A23BDE3CC00B7E085 /* ThymesiaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1910B1AC2364227500EC7AD4 /* thymesiaUITests */ = {
+		198E8B1423BDE3CC00B7E085 /* ThymesiaUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1910B1BC2364227500EC7AD4 /* Build configuration list for PBXNativeTarget "thymesiaUITests" */;
+			buildConfigurationList = 198E8B2423BDE3CC00B7E085 /* Build configuration list for PBXNativeTarget "ThymesiaUITests" */;
 			buildPhases = (
-				1910B1A92364227500EC7AD4 /* Sources */,
-				1910B1AA2364227500EC7AD4 /* Frameworks */,
-				1910B1AB2364227500EC7AD4 /* Resources */,
+				198E8B1123BDE3CC00B7E085 /* Sources */,
+				198E8B1223BDE3CC00B7E085 /* Frameworks */,
+				198E8B1323BDE3CC00B7E085 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1910B1AF2364227500EC7AD4 /* PBXTargetDependency */,
+				198E8B1723BDE3CC00B7E085 /* PBXTargetDependency */,
 			);
-			name = thymesiaUITests;
-			productName = thymesiaUITests;
-			productReference = 1910B1AD2364227500EC7AD4 /* thymesiaUITests.xctest */;
+			name = ThymesiaUITests;
+			productName = ThymesiaUITests;
+			productReference = 198E8B1523BDE3CC00B7E085 /* ThymesiaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1910B1842364227300EC7AD4 /* Project object */ = {
+		198E8AEC23BDE3CB00B7E085 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1120;
-				LastUpgradeCheck = 1120;
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Chase Norman";
 				TargetAttributes = {
-					1910B18B2364227300EC7AD4 = {
-						CreatedOnToolsVersion = 11.2;
+					198E8AF323BDE3CB00B7E085 = {
+						CreatedOnToolsVersion = 11.1;
 					};
-					1910B1A12364227500EC7AD4 = {
-						CreatedOnToolsVersion = 11.2;
-						TestTargetID = 1910B18B2364227300EC7AD4;
+					198E8B0923BDE3CC00B7E085 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 198E8AF323BDE3CB00B7E085;
 					};
-					1910B1AC2364227500EC7AD4 = {
-						CreatedOnToolsVersion = 11.2;
-						TestTargetID = 1910B18B2364227300EC7AD4;
+					198E8B1423BDE3CC00B7E085 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 198E8AF323BDE3CB00B7E085;
 					};
 				};
 			};
-			buildConfigurationList = 1910B1872364227300EC7AD4 /* Build configuration list for PBXProject "thymesia" */;
+			buildConfigurationList = 198E8AEF23BDE3CB00B7E085 /* Build configuration list for PBXProject "Thymesia" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -231,37 +226,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 1910B1832364227300EC7AD4;
-			productRefGroup = 1910B18D2364227300EC7AD4 /* Products */;
+			mainGroup = 198E8AEB23BDE3CB00B7E085;
+			productRefGroup = 198E8AF523BDE3CB00B7E085 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1910B18B2364227300EC7AD4 /* thymesia */,
-				1910B1A12364227500EC7AD4 /* thymesiaTests */,
-				1910B1AC2364227500EC7AD4 /* thymesiaUITests */,
+				198E8AF323BDE3CB00B7E085 /* Thymesia */,
+				198E8B0923BDE3CC00B7E085 /* ThymesiaTests */,
+				198E8B1423BDE3CC00B7E085 /* ThymesiaUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1910B18A2364227300EC7AD4 /* Resources */ = {
+		198E8AF223BDE3CB00B7E085 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1910B19C2364227500EC7AD4 /* LaunchScreen.storyboard in Resources */,
-				1910B1992364227500EC7AD4 /* Preview Assets.xcassets in Resources */,
-				1910B1962364227500EC7AD4 /* Assets.xcassets in Resources */,
+				198E8B0423BDE3CB00B7E085 /* LaunchScreen.storyboard in Resources */,
+				198E8B0123BDE3CB00B7E085 /* Preview Assets.xcassets in Resources */,
+				198E8AFE23BDE3CB00B7E085 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1910B1A02364227500EC7AD4 /* Resources */ = {
+		198E8B0823BDE3CC00B7E085 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1910B1AB2364227500EC7AD4 /* Resources */ = {
+		198E8B1323BDE3CC00B7E085 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -271,54 +266,53 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1910B1882364227300EC7AD4 /* Sources */ = {
+		198E8AF023BDE3CB00B7E085 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1910B1902364227300EC7AD4 /* AppDelegate.swift in Sources */,
-				194F7FD12365C21600FE2226 /* Key.swift in Sources */,
-				1910B1922364227300EC7AD4 /* SceneDelegate.swift in Sources */,
-				1910B1942364227300EC7AD4 /* ContentView.swift in Sources */,
-				993FF3B523658ECA005E48D3 /* Model.swift in Sources */,
+				198E8AF823BDE3CB00B7E085 /* AppDelegate.swift in Sources */,
+				198E8B2823BDE64B00B7E085 /* PageView.swift in Sources */,
+				198E8AFA23BDE3CB00B7E085 /* SceneDelegate.swift in Sources */,
+				198E8AFC23BDE3CB00B7E085 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1910B19E2364227500EC7AD4 /* Sources */ = {
+		198E8B0623BDE3CC00B7E085 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1910B1A72364227500EC7AD4 /* thymesiaTests.swift in Sources */,
+				198E8B0F23BDE3CC00B7E085 /* ThymesiaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1910B1A92364227500EC7AD4 /* Sources */ = {
+		198E8B1123BDE3CC00B7E085 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1910B1B22364227500EC7AD4 /* thymesiaUITests.swift in Sources */,
+				198E8B1A23BDE3CC00B7E085 /* ThymesiaUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1910B1A42364227500EC7AD4 /* PBXTargetDependency */ = {
+		198E8B0C23BDE3CC00B7E085 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1910B18B2364227300EC7AD4 /* thymesia */;
-			targetProxy = 1910B1A32364227500EC7AD4 /* PBXContainerItemProxy */;
+			target = 198E8AF323BDE3CB00B7E085 /* Thymesia */;
+			targetProxy = 198E8B0B23BDE3CC00B7E085 /* PBXContainerItemProxy */;
 		};
-		1910B1AF2364227500EC7AD4 /* PBXTargetDependency */ = {
+		198E8B1723BDE3CC00B7E085 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1910B18B2364227300EC7AD4 /* thymesia */;
-			targetProxy = 1910B1AE2364227500EC7AD4 /* PBXContainerItemProxy */;
+			target = 198E8AF323BDE3CB00B7E085 /* Thymesia */;
+			targetProxy = 198E8B1623BDE3CC00B7E085 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1910B19A2364227500EC7AD4 /* LaunchScreen.storyboard */ = {
+		198E8B0223BDE3CB00B7E085 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1910B19B2364227500EC7AD4 /* Base */,
+				198E8B0323BDE3CB00B7E085 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -326,7 +320,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1910B1B42364227500EC7AD4 /* Debug */ = {
+		198E8B1C23BDE3CC00B7E085 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -376,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -386,7 +380,7 @@
 			};
 			name = Debug;
 		};
-		1910B1B52364227500EC7AD4 /* Release */ = {
+		198E8B1D23BDE3CC00B7E085 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -430,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -440,176 +434,170 @@
 			};
 			name = Release;
 		};
-		1910B1B72364227500EC7AD4 /* Debug */ = {
+		198E8B1F23BDE3CC00B7E085 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = thymesia/thymesia.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"thymesia/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Thymesia/Preview Content\"";
 				DEVELOPMENT_TEAM = 8GN67288KC;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = thymesia/Info.plist;
+				INFOPLIST_FILE = Thymesia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.thymesia;
+				PRODUCT_BUNDLE_IDENTIFIER = test.Thymesia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1910B1B82364227500EC7AD4 /* Release */ = {
+		198E8B2023BDE3CC00B7E085 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = thymesia/thymesia.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"thymesia/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Thymesia/Preview Content\"";
 				DEVELOPMENT_TEAM = 8GN67288KC;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = thymesia/Info.plist;
+				INFOPLIST_FILE = Thymesia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.thymesia;
+				PRODUCT_BUNDLE_IDENTIFIER = test.Thymesia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		1910B1BA2364227500EC7AD4 /* Debug */ = {
+		198E8B2223BDE3CC00B7E085 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8GN67288KC;
-				INFOPLIST_FILE = thymesiaTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				INFOPLIST_FILE = ThymesiaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.thymesiaTests;
+				PRODUCT_BUNDLE_IDENTIFIER = test.ThymesiaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/thymesia.app/thymesia";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thymesia.app/Thymesia";
 			};
 			name = Debug;
 		};
-		1910B1BB2364227500EC7AD4 /* Release */ = {
+		198E8B2323BDE3CC00B7E085 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8GN67288KC;
-				INFOPLIST_FILE = thymesiaTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				INFOPLIST_FILE = ThymesiaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.thymesiaTests;
+				PRODUCT_BUNDLE_IDENTIFIER = test.ThymesiaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/thymesia.app/thymesia";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thymesia.app/Thymesia";
 			};
 			name = Release;
 		};
-		1910B1BD2364227500EC7AD4 /* Debug */ = {
+		198E8B2523BDE3CC00B7E085 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8GN67288KC;
-				INFOPLIST_FILE = thymesiaUITests/Info.plist;
+				INFOPLIST_FILE = ThymesiaUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.thymesiaUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = test.ThymesiaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = thymesia;
+				TEST_TARGET_NAME = Thymesia;
 			};
 			name = Debug;
 		};
-		1910B1BE2364227500EC7AD4 /* Release */ = {
+		198E8B2623BDE3CC00B7E085 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8GN67288KC;
-				INFOPLIST_FILE = thymesiaUITests/Info.plist;
+				INFOPLIST_FILE = ThymesiaUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.thymesiaUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = test.ThymesiaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = thymesia;
+				TEST_TARGET_NAME = Thymesia;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1910B1872364227300EC7AD4 /* Build configuration list for PBXProject "thymesia" */ = {
+		198E8AEF23BDE3CB00B7E085 /* Build configuration list for PBXProject "Thymesia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1910B1B42364227500EC7AD4 /* Debug */,
-				1910B1B52364227500EC7AD4 /* Release */,
+				198E8B1C23BDE3CC00B7E085 /* Debug */,
+				198E8B1D23BDE3CC00B7E085 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1910B1B62364227500EC7AD4 /* Build configuration list for PBXNativeTarget "thymesia" */ = {
+		198E8B1E23BDE3CC00B7E085 /* Build configuration list for PBXNativeTarget "Thymesia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1910B1B72364227500EC7AD4 /* Debug */,
-				1910B1B82364227500EC7AD4 /* Release */,
+				198E8B1F23BDE3CC00B7E085 /* Debug */,
+				198E8B2023BDE3CC00B7E085 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1910B1B92364227500EC7AD4 /* Build configuration list for PBXNativeTarget "thymesiaTests" */ = {
+		198E8B2123BDE3CC00B7E085 /* Build configuration list for PBXNativeTarget "ThymesiaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1910B1BA2364227500EC7AD4 /* Debug */,
-				1910B1BB2364227500EC7AD4 /* Release */,
+				198E8B2223BDE3CC00B7E085 /* Debug */,
+				198E8B2323BDE3CC00B7E085 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1910B1BC2364227500EC7AD4 /* Build configuration list for PBXNativeTarget "thymesiaUITests" */ = {
+		198E8B2423BDE3CC00B7E085 /* Build configuration list for PBXNativeTarget "ThymesiaUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1910B1BD2364227500EC7AD4 /* Debug */,
-				1910B1BE2364227500EC7AD4 /* Release */,
+				198E8B2523BDE3CC00B7E085 /* Debug */,
+				198E8B2623BDE3CC00B7E085 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1910B1842364227300EC7AD4 /* Project object */;
+	rootObject = 198E8AEC23BDE3CB00B7E085 /* Project object */;
 }

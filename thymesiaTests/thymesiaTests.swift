@@ -1,15 +1,15 @@
 //
-//  thymesiaTests.swift
-//  thymesiaTests
+//  ThymesiaTests.swift
+//  ThymesiaTests
 //
-//  Created by Chase Norman on 10/25/19.
-//  Copyright © 2019 Chase Norman. All rights reserved.
+//  Created by Chase Norman on 1/2/20.
+//  Copyright © 2020 Chase Norman. All rights reserved.
 //
 
 import XCTest
-@testable import thymesia
+@testable import Thymesia
 
-class thymesiaTests: XCTestCase {
+class ThymesiaTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -1,9 +1,9 @@
 //
 //  SceneDelegate.swift
-//  thymesia
+//  Thymesia
 //
-//  Created by Chase Norman on 10/25/19.
-//  Copyright © 2019 Chase Norman. All rights reserved.
+//  Created by Chase Norman on 1/2/20.
+//  Copyright © 2020 Chase Norman. All rights reserved.
 //
 
 import UIKit
@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
+        let contentView = ContentView().environmentObject(views)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {

@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  thymesia
+//  Thymesia
 //
-//  Created by Chase Norman on 10/25/19.
-//  Copyright © 2019 Chase Norman. All rights reserved.
+//  Created by Chase Norman on 1/2/20.
+//  Copyright © 2020 Chase Norman. All rights reserved.
 //
 
 import UIKit
