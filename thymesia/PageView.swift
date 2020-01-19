@@ -3,8 +3,9 @@ import UIKit
 import Contacts
 
 struct PageControl: UIViewRepresentable {
-    var numberOfPages: Int
+    @Binding var numberOfPages: Int
     @Binding var currentPage: Int
+    var colorScheme: ColorScheme
 
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
@@ -17,11 +18,14 @@ struct PageControl: UIViewRepresentable {
             context.coordinator,
             action: #selector(Coordinator.updateCurrentPage(sender:)),
             for: .valueChanged)
-
+        control.hidesForSinglePage = true
+        control.currentPageIndicatorTintColor = colorScheme == .light ? .black : .white
+        control.pageIndicatorTintColor = .gray
         return control
     }
 
     func updateUIView(_ uiView: UIPageControl, context: Context) {
+        uiView.numberOfPages = numberOfPages
         uiView.currentPage = currentPage
     }
 
@@ -38,8 +42,9 @@ struct PageControl: UIViewRepresentable {
     }
 }
 
+var prevPage: Int = 0
+
 struct PageViewController: UIViewControllerRepresentable {
-    var controllers: [UIViewController]
     @Binding var currentPage: Int
     
     func makeCoordinator() -> Coordinator {
@@ -52,13 +57,23 @@ struct PageViewController: UIViewControllerRepresentable {
             navigationOrientation: .horizontal)
         pageViewController.dataSource = context.coordinator
         pageViewController.delegate = context.coordinator
-
         return pageViewController
     }
 
     func updateUIViewController(_ pageViewController: UIPageViewController, context: Context) {
-        pageViewController.setViewControllers(
-            [controllers[currentPage]], direction: .forward, animated: true)
+        if (prevPage < currentPage) {
+            pageViewController.setViewControllers(
+                [views.views[currentPage]], direction: .forward, animated: true)
+        } else if prevPage == currentPage {
+            pageViewController.setViewControllers(
+                [views.views[currentPage]], direction: .forward, animated: true)
+        } else {
+            pageViewController.setViewControllers(
+                [views.views[currentPage]], direction: .reverse, animated: true)
+        }
+        
+        
+        prevPage = currentPage
     }
 
     class Coordinator: NSObject, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
@@ -72,32 +87,32 @@ struct PageViewController: UIViewControllerRepresentable {
             _ pageViewController: UIPageViewController,
             viewControllerBefore viewController: UIViewController) -> UIViewController?
         {
-            guard let index = parent.controllers.firstIndex(of: viewController) else {
+            guard let index = views.views.firstIndex(of: viewController) else {
                 return nil
             }
             if index == 0 {
                 return nil //parent.controllers.last
             }
-            return parent.controllers[index - 1]
+            return views.views[index - 1]
         }
 
         func pageViewController(
             _ pageViewController: UIPageViewController,
             viewControllerAfter viewController: UIViewController) -> UIViewController?
         {
-            guard let index = parent.controllers.firstIndex(of: viewController) else {
+            guard let index = views.views.firstIndex(of: viewController) else {
                 return nil
             }
-            if index + 1 == parent.controllers.count {
+            if index + 1 == views.views.count {
                 return nil //UIHostingController(rootView: EditView(selectedContact: new())) //parent.controllers.first
             }
-            return parent.controllers[index + 1]
+            return views.views[index + 1]
         }
 
         func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
             if completed,
                 let visibleViewController = pageViewController.viewControllers?.first,
-                let index = parent.controllers.firstIndex(of: visibleViewController)
+                let index = views.views.firstIndex(of: visibleViewController)
             {
                 parent.currentPage = index
             }
@@ -108,5 +123,37 @@ struct PageViewController: UIViewControllerRepresentable {
             contacts.contacts.insert(c, at: 0);
             return c;
         }
+    }
+}
+
+struct SearchBar: UIViewRepresentable {
+
+    @Binding var text: String
+
+    class Coordinator: NSObject, UISearchBarDelegate {
+
+        @Binding var text: String
+
+        init(text: Binding<String>) {
+            _text = text
+        }
+
+        func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+            text = searchText
+        }
+    }
+    func makeCoordinator() -> SearchBar.Coordinator {
+        return Coordinator(text: $text)
+    }
+
+    func makeUIView(context: UIViewRepresentableContext<SearchBar>) -> UISearchBar {
+        let searchBar = UISearchBar(frame: .zero)
+        searchBar.delegate = context.coordinator
+        searchBar.autocapitalizationType = .none
+        return searchBar
+    }
+
+    func updateUIView(_ uiView: UISearchBar, context: UIViewRepresentableContext<SearchBar>) {
+        uiView.text = text
     }
 }

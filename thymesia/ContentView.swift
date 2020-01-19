@@ -29,7 +29,9 @@ public class Contacts: ObservableObject {
 }
 
 public class Views: ObservableObject {
-    @Published var views: [UIViewController] = [UIHostingController(rootView: SearchView().environmentObject(contacts))];
+    @Published var views: [UIViewController] = [UIViewController()];
+    @Published var pages = 1
+    @Published var currentPage = 0
 }
 
 let contacts = Contacts()
@@ -47,11 +49,17 @@ func delete(at offsets: IndexSet) {
 func new() -> CNMutableContact {
     let c = CNMutableContact();
     contacts.contacts.insert(c, at: 0);
+    let save = CNSaveRequest()
+    save.add(c, toContainerWithIdentifier: nil)
+    try! CNContactStore().execute(save);
     return c;
 }
 
-func name(_ contact: CNMutableContact) -> String {
-    return nameFormatter.string(from: contact) ?? "No Name"
+func name(_ contact: CNMutableContact?) -> String {
+    if let c = contact {
+        return nameFormatter.string(from: c) ?? "No Name"
+    }
+    return "null"
 }
 
 private let nameFormatter: CNContactFormatter = {
@@ -68,15 +76,19 @@ private let dateFormatter: DateFormatter = {
 }()
 
 struct ContentView: View {
-    @State private var currentPage = 0
+    @Environment (\.colorScheme) var colorScheme: ColorScheme
     @EnvironmentObject var views: Views;
     
     var body: some View {
         ZStack(alignment: Alignment.bottomTrailing) {
-            PageViewController(controllers: views.views, currentPage: $currentPage)
+            PageViewController(currentPage: $views.currentPage)
             HStack {
                 Spacer();
-                PageControl(numberOfPages: views.views.count, currentPage: $currentPage)
+                if (colorScheme == .light) {
+                    PageControl(numberOfPages: $views.pages, currentPage: $views.currentPage, colorScheme: .light)
+                } else {
+                    PageControl(numberOfPages: $views.pages, currentPage: $views.currentPage, colorScheme: .dark)
+                }
                 Spacer();
             }
         }
@@ -89,26 +101,32 @@ struct SearchView: View {
     var body: some View {
         NavigationView {
             MasterView(contacts: $contacts.contacts)
-                .navigationBarTitle(Text("Master"))
+                .navigationBarTitle(Text("Search"))
                 .navigationBarItems(
                     leading: EditButton(),
                     trailing: Button(
                         action: {
-                            //withAnimation { views.insert(UIHostingController(EditView())) }
+                            views.views.append(UIHostingController(rootView: EditView(selectedContact: new())))
+                            views.currentPage = views.pages
+                            views.pages += 1
+                            //withAnimation {  }
                         }
                     ) {
                         Image(systemName: "plus")
                     }
-                )
+            )
             DetailView()
-        }.navigationViewStyle(DoubleColumnNavigationViewStyle())
+        }
     }
 }
 
 struct MasterView: View {
     @Binding var contacts: [CNMutableContact]
+    @State var search: String = ""
 
     var body: some View {
+        VStack {
+            SearchBar(text: $search)
         List {
             ForEach(contacts, id: \.self) { contact in
                 NavigationLink(
@@ -117,8 +135,9 @@ struct MasterView: View {
                     Text(name(contact))
                 }
             }.onDelete { indices in
-                indices.forEach { self.contacts.remove(at: $0) }
+                delete(at: indices)
             }
+        }
         }
     }
 }
@@ -128,12 +147,8 @@ struct DetailView: View {
 
     var body: some View {
         Group {
-            if selectedContact != nil {
-                Text(name(selectedContact!))
-            } else {
-                Text("Detail view content goes here")
-            }
-        }.navigationBarTitle(Text("Detail"))
+            Text(name(selectedContact))
+        }.navigationBarTitle(Text(name(selectedContact)))
     }
 }
 
@@ -142,14 +157,34 @@ struct EditView: View {
     var selectedContact: CNMutableContact
 
     var body: some View {
-        Group {
-            Text(name(selectedContact))
-        }.navigationBarTitle(Text("Edit"))
+        NavigationView {
+            Text(name(selectedContact)).navigationBarTitle(Text(name(selectedContact))).navigationBarItems(
+                leading: Button(
+                    action: {
+                        views.currentPage -= 1
+                        views.views.remove(at: views.currentPage + 1)
+                        views.pages -= 1
+                    }
+                ) {
+                    Text("Done")
+                },
+                trailing: Button(
+                    action: {
+                        views.views.append(UIHostingController(rootView: EditView(selectedContact: new())))
+                        views.currentPage = views.pages
+                        views.pages += 1
+                        //withAnimation {  }
+                    }
+                ) {
+                    Image(systemName: "plus")
+                }
+            )
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(views)
     }
 }
